@@ -181,7 +181,8 @@ a{
 .about_text .title_block:before{
     left: 16%;
 }
-.about_text .desc_cart{
+.about_text .desc_cart,
+.why_text .desc_cart{
     text-align: left;
     margin-bottom: 25px;
 }
@@ -190,6 +191,8 @@ a{
 }
 .why{
     display: flex;
+    gap: 90px;
+    margin-top: 35px;
 }
 .why_img{
     position: relative;
@@ -197,7 +200,58 @@ a{
 .dots{
     position: absolute;
     z-index: -2;
+    left: -5%;
+    bottom: -2%;
 }
 .desktop{
     width: 525px;
+}
+.why_img label{
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.why_text .title_block{
+    text-align: left;
+}
+.why_text{
+    position: relative;
+}
+.why_text .title_block:before{
+    left: 12%;
+}
+.bobs{
+    display: flex;
+    padding: 0 45px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 60px;
+}
+.bob{
+    width: 100%;
+    text-align: center;
+}
+.bob:after{
+    content: "";
+    width: 155px;
+    height: 120px;
+    background: linear-gradient(#33c8c1, #119bd2);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -46px;
+    transform: rotate(-45deg);
+    border-radius: 150px;
 }
