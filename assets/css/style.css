@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .bg{
     width: 100%;
@@ -560,8 +561,49 @@ body{
 .footer_link{
     display: flex;
     gap: 25px;
+    margin-top: 25px;
 }
 .footer_link svg:hover{
     fill: #fe8464;
     cursor: pointer;
+}
+.quick_link h2,
+.resource h2,
+.contact_us h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 25px;
+}
+.quick_link ul,
+.resource ul,
+.contact_us ul{
+    list-style: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.quick_link li,
+.resource li,
+.contact_us li{
+    margin-bottom: 10px;
+}
+.footer{
+    margin-top: 35px;
+    border-top: 1px solid #FFFFFF80;
+    padding: 35px 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.tp{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(90deg, #361cc1, #2e82ef);
+    color: white;
+    padding: 9px;
+    border-radius: 5px;
 }
